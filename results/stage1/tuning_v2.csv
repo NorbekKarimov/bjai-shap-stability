@@ -1,0 +1,20 @@
+model,params,val_macro_f1,fit_s
+RF,"{""max_features"": ""sqrt"", ""min_samples_leaf"": 1, ""n_estimators"": 300}",0.7033478120815321,2.7608673572540283
+RF,"{""max_features"": 0.3, ""min_samples_leaf"": 1, ""n_estimators"": 300}",0.7256880665695203,6.777199983596802
+RF,"{""max_features"": 0.5, ""min_samples_leaf"": 1, ""n_estimators"": 300}",0.740629957121966,10.862526893615723
+XGB,"{""colsample_bytree"": 0.8, ""learning_rate"": 0.1, ""max_depth"": 6, ""n_estimators"": 400, ""subsample"": 0.8}",0.7395459533275636,9.063345909118652
+XGB,"{""colsample_bytree"": 0.8, ""learning_rate"": 0.1, ""max_depth"": 6, ""n_estimators"": 800, ""subsample"": 0.8}",0.7460669709812888,18.464657068252563
+XGB,"{""colsample_bytree"": 0.8, ""learning_rate"": 0.1, ""max_depth"": 10, ""n_estimators"": 400, ""subsample"": 0.8}",0.7546052363384017,13.045212268829346
+XGB,"{""colsample_bytree"": 0.8, ""learning_rate"": 0.1, ""max_depth"": 10, ""n_estimators"": 800, ""subsample"": 0.8}",0.7527067652982068,24.21399188041687
+XGB,"{""colsample_bytree"": 0.8, ""learning_rate"": 0.1, ""max_depth"": 14, ""n_estimators"": 400, ""subsample"": 0.8}",0.7424016633882015,15.632341861724854
+XGB,"{""colsample_bytree"": 0.8, ""learning_rate"": 0.1, ""max_depth"": 14, ""n_estimators"": 800, ""subsample"": 0.8}",0.7527221729580162,25.95627522468567
+SVC,"{""C"": 10, ""gamma"": ""scale""}",0.6793418823959615,113.28486752510071
+SVC,"{""C"": 10, ""gamma"": 0.03}",0.598081540872495,112.8291506767273
+SVC,"{""C"": 100, ""gamma"": ""scale""}",0.7336913891507936,155.0168490409851
+SVC,"{""C"": 100, ""gamma"": 0.03}",0.6641523683660419,153.29520726203918
+SVC,"{""C"": 1000, ""gamma"": ""scale""}",0.7083364069013829,345.38331270217896
+SVC,"{""C"": 1000, ""gamma"": 0.03}",0.7259673322039235,260.60060811042786
+MLP,"{""alpha"": 0.0001, ""hidden_layer_sizes"": [256, 128]}",0.7060064428428455,19.50463318824768
+MLP,"{""alpha"": 0.0001, ""hidden_layer_sizes"": [512, 256]}",0.7305623745584982,28.084208011627197
+MLP,"{""alpha"": 0.001, ""hidden_layer_sizes"": [256, 128]}",0.6785201073469143,11.242763996124268
+MLP,"{""alpha"": 0.001, ""hidden_layer_sizes"": [512, 256]}",0.7339000752011248,36.64628601074219

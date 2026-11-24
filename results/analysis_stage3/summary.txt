@@ -1,0 +1,41 @@
+Sanity (max |base + sum SHAP - model output|) per model:
+model
+MLP    1.877546e-06
+RF     3.054738e-07
+SVC    1.629815e-07
+XGB    3.931166e-06
+
+Class effect tests (observed class):
+model   target    source       metric  overall_mean  kruskal_H      p  epsilon_sq  n_rows
+  MLP observed explainer top5_jaccard        0.6723     6.6820 0.3513      0.0481     140
+  MLP observed explainer        rbo10        0.7944    22.8359 0.0009      0.1643     140
+  MLP observed explainer   top1_agree        0.8833    10.4172 0.1081      0.0749     140
+  MLP observed explainer        sign5        0.9319    10.3162 0.1120      0.0742     140
+  MLP observed     model top5_jaccard        0.5176    23.0618 0.0008      0.1659     140
+  MLP observed     model        rbo10        0.6758    19.4564 0.0035      0.1400     140
+  MLP observed     model   top1_agree        0.7598    23.7118 0.0006      0.1706     140
+  MLP observed     model        sign5        0.8044    21.7762 0.0013      0.1567     140
+   RF observed explainer top5_jaccard        0.7898   151.1248 0.0000      0.2162     700
+   RF observed explainer        rbo10        0.8885   304.0615 0.0000      0.4350     700
+   RF observed explainer   top1_agree        0.9457    31.8032 0.0000      0.0455     700
+   RF observed explainer        sign5        0.9909    96.0735 0.0000      0.1374     700
+   RF observed     model top5_jaccard        0.6700    72.1063 0.0000      0.1032     700
+   RF observed     model        rbo10        0.8199   137.7834 0.0000      0.1971     700
+   RF observed     model   top1_agree        0.9195    61.3144 0.0000      0.0877     700
+   RF observed     model        sign5        0.9665    39.4747 0.0000      0.0565     700
+  SVC observed explainer top5_jaccard        0.6672    27.3633 0.0001      0.1969     140
+  SVC observed explainer        rbo10        0.7915    34.6083 0.0000      0.2490     140
+  SVC observed explainer   top1_agree        0.8667    23.4828 0.0006      0.1689     140
+  SVC observed explainer        sign5        0.9448    15.2672 0.0183      0.1098     140
+  SVC observed     model top5_jaccard        0.4774    23.9898 0.0005      0.1726     140
+  SVC observed     model        rbo10        0.6674    32.4272 0.0000      0.2333     140
+  SVC observed     model   top1_agree        0.8229    19.3394 0.0036      0.1391     140
+  SVC observed     model        sign5        0.7650     7.1007 0.3116      0.0511     140
+  XGB observed explainer top5_jaccard        0.7918   150.6344 0.0000      0.2155     700
+  XGB observed explainer        rbo10        0.8962   395.1188 0.0000      0.5653     700
+  XGB observed explainer   top1_agree        0.9676    70.3503 0.0000      0.1006     700
+  XGB observed explainer        sign5        0.9911   141.5487 0.0000      0.2025     700
+  XGB observed     model top5_jaccard        0.6208    88.8276 0.0000      0.1271     700
+  XGB observed     model        rbo10        0.8103   240.6329 0.0000      0.3443     700
+  XGB observed     model   top1_agree        0.9611    44.2661 0.0000      0.0633     700
+  XGB observed     model        sign5        0.9533   126.7519 0.0000      0.1813     700
